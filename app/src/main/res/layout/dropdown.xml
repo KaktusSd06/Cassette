@@ -1,0 +1,15 @@
+<TextView android:id="@+id/textView10"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="TextView"
+    tools:layout_editor_absoluteX="75dp"
+    tools:layout_editor_absoluteY="29dp"
+    android:textSize="16dp"
+    android:textColor="@color/Light_gray"
+    android:background="@color/Dark_grey"
+    android:textStyle="bold"
+
+    android:padding="10dp"
+    android:paddingRight="0dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" />

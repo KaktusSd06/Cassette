@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "182903466833",
+    "firebase_url": "https://cassette-342b6-default-rtdb.firebaseio.com",
+    "project_id": "cassette-342b6",
+    "storage_bucket": "cassette-342b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:182903466833:android:0a97a4f60b86768c738170",
+        "android_client_info": {
+          "package_name": "com.example.cassette"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7x1KVc8kVmsS9FNxGFdz4MhhtQhnzy9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

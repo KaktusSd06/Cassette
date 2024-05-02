@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cassette</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="time">time</string>
+    <string name="title_activity_info_film">InfoFilm</string>
+    <string name="title_activity_film_info">FilmInfo</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="default_web_client_id">182903466833-99mkl8jt3nvtb9dl6u5nhc1m70vdp0rc.apps.googleusercontent.com</string>
+</resources>

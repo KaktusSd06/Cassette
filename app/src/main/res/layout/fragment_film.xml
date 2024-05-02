@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".film">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCreateFilm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/Green"
+            android:clickable="true"
+            android:src="@android:drawable/ic_input_add"
+            app:backgroundTint="@color/Green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="Ви ще не зберегли жодного фільму"
+            android:textColor="@color/Light_gray"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/listViewSavedFilm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            android:background="@color/Dark_grey"
+            android:progressBackgroundTint="#602525"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ListView
+            android:id="@+id/listViewSavedFilm"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchViewFilm_saved"
+            tools:listitem="@layout/list_savedfilm_item" />
+
+        <SearchView
+            android:id="@+id/searchViewFilm_saved"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/search_view"
+            android:closeIcon="@drawable/icon_exit"
+            android:editTextColor="@color/white"
+            android:iconifiedByDefault="false"
+            android:queryHint="Пошук"
+            android:searchIcon="@drawable/icon_search"
+            android:textColorHint="@color/white"
+            app:iconifiedByDefault="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </SearchView>
+
+        <Spinner
+            android:id="@+id/spinnerSortBy_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_search"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:paddingLeft="25dp"
+            android:paddingTop="2dp"
+            android:paddingRight="15dp"
+            app:layout_constraintStart_toEndOf="@+id/spinnerGenres_saved"
+            app:layout_constraintTop_toBottomOf="@+id/searchViewFilm_saved" />
+
+        <Spinner
+            android:id="@+id/spinnerGenres_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_search"
+            android:outlineAmbientShadowColor="@color/white"
+            android:outlineSpotShadowColor="@color/white"
+            android:paddingLeft="25dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            app:layout_constraintStart_toStartOf="@+id/searchViewFilm_saved"
+            app:layout_constraintTop_toBottomOf="@+id/searchViewFilm_saved" />
+
+        <ImageView
+            android:id="@+id/imageView6_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerSortBy_saved"
+            app:layout_constraintStart_toStartOf="@+id/spinnerSortBy_saved"
+            app:layout_constraintTop_toTopOf="@+id/spinnerSortBy_saved" />
+
+        <ImageView
+            android:id="@+id/imageView7_saved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/down"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerGenres_saved"
+            app:layout_constraintStart_toStartOf="@+id/spinnerGenres_saved"
+            app:layout_constraintTop_toTopOf="@+id/spinnerGenres_saved" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
